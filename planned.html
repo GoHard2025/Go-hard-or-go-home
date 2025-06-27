@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planlagte økter</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function toggleView(view) {
+      const uke = document.getElementById("ukevisning");
+      const dag = document.getElementById("dagvisning");
+      if (view === 'uke') {
+        uke.style.display = 'block';
+        dag.style.display = 'none';
+      } else {
+        uke.style.display = 'none';
+        dag.style.display = 'block';
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Padlemann-logo" class="logo" />
+    <h1 class="title">Planlagte økter</h1>
+    <div class="view-toggle">
+      <button onclick class="button" toggleView('uke')">Vis uke</a>
+      <button onclick class="button" toggleView('dag')">Vis dag</a>
+    </div>
+
+    <div id="ukevisning">
+      <div class="week-grid">
+        <div class="day"><h3>Mandag 10.06</h3>
+          <ul>
+            <li>🕓 Morgen: 🚣 Padling – 60 min 🔥 S2 ⚡ Lav</li>
+            <li>🕓 Kveld: 🏃 Løp – 40 min 🔥 S3 ⚡ Moderat</li>
+          </ul>
+        </div>
+        <div class="day"><h3>Tirsdag 11.06</h3>
+          <ul>
+            <li>🕓 Morgen: 🛶 Magnar – 30 min 🔥 S1 ⚡ Lett</li>
+            <li>🕓 Kveld: 🏋️ Styrke – 60 min 🔥 S3 ⚡ Tung</li>
+          </ul>
+        </div>
+        <div class="day"><h3>Onsdag 12.06</h3>
+          <ul>
+            <li>🕓 Morgen: 🚣 Padling – 45 min 🔥 S2 ⚡ Lett</li>
+            <li>🕓 Kveld: 🧘 Mobilitet – 30 min 🔥 S1 ⚡ Lett</li>
+          </ul>
+        </div>
+        <div class="day"><h3>Torsdag 13.06</h3>
+          <ul>
+            <li>🕓 Morgen: 🏃 Løp – 50 min 🔥 S3 ⚡ Moderat</li>
+            <li>🕓 Kveld: 🚣 Padling – 60 min 🔥 S4 ⚡ Hard</li>
+          </ul>
+        </div>
+        <div class="day"><h3>Fredag 14.06</h3>
+          <ul>
+            <li>🕓 Morgen: 🚣 Padling – 60 min 🔥 S2 ⚡ Lett</li>
+          </ul>
+        </div>
+        <div class="day"><h3>Lørdag 15.06</h3>
+          <ul>
+            <li>🕓 Morgen: 🏋️ Styrke – 60 min 🔥 S3 ⚡ Tung</li>
+            <li>🕓 Kveld: 🛶 Magnar – 30 min 🔥 S1 ⚡ Lett</li>
+          </ul>
+        </div>
+        <div class="day"><h3>Søndag 16.06</h3>
+          <ul>
+            <li>🕓 Morgen: 🛌 Fri</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="dagvisning" style="display:none;">
+      <div class="day"><h3>Mandag 10.06</h3>
+        <ul>
+          <li>🕓 Morgen: 🚣 Padling – 60 min 🔥 S2 ⚡ Lav</li>
+          <li>🕓 Kveld: 🏃 Løp – 40 min 🔥 S3 ⚡ Moderat</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sticky-menu">
+      <button class="button">📝</a>
+      <button class="button">📅</a>
+      <button class="button">⚙️</a>
+    </div>
+  </div>
+</body>
+</html>

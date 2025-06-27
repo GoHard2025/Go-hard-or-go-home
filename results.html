@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultater</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" class="logo" alt="Padlemann-logo" />
+    <h1 class="title">Resultater</h1>
+
+    <form id="resultForm">
+      <input type="date" id="date" required>
+      <input type="text" id="name" placeholder="Navn på stevne" required>
+      <input type="text" id="distance" placeholder="Distanse (eks: 5000m)" required>
+      <input type="text" id="time" placeholder="Tid (eks: 22:30)" required>
+      <input type="text" id="placement" placeholder="Plassering (eks: 1/12)">
+      <textarea id="comment" placeholder="Kommentar..."></textarea>
+      <button type="submit">Lagre resultat</a>
+    </form>
+
+    <table id="resultsTable">
+      <thead>
+        <tr>
+          <th>Dato</th><th>Stevne</th><th>Distanse</th><th>Tid</th><th>Plass</th><th>Kommentar</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div class="sticky-menu">
+      <button>📝</a>
+      <button>📅</a>
+      <button>⚙️</a>
+    </div>
+  </div>
+</body>
+</html>
